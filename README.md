@@ -1,3 +1,3 @@
 # C++ Programs
 
-A repo to store my college C++ programs
+C++ programs for Data Structure and Algorithms.
