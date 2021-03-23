@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-template <class T> class QueueDemo {
+template <class T> class Queue {
     T* queue;
     int capacity;
     int front;
     int rear;
     int count;
 public:
-    QueueDemo(int);
+    Queue(int);
     void deQueue();
     void enQueue(T);
     T peekFront();
@@ -18,7 +18,7 @@ public:
     bool isFull();
 };
 
-template <class T> QueueDemo<T>::QueueDemo(int size) {
+template <class T> Queue<T>::Queue(int size) {
     queue = new T[size];
     capacity = size;
     front = 0;
@@ -26,7 +26,7 @@ template <class T> QueueDemo<T>::QueueDemo(int size) {
     count = 0;
 }
 
-template <class T> void QueueDemo<T>::enQueue(T item) {
+template <class T> void Queue<T>::enQueue(T item) {
     if (isFull()) {
         cout << "OverFlow\nProgram Terminated\n";
         return;
@@ -36,7 +36,7 @@ template <class T> void QueueDemo<T>::enQueue(T item) {
     count++;
 }
 
-template <class T> void QueueDemo<T>::deQueue() {
+template <class T> void Queue<T>::deQueue() {
     if (isEmpty()) {
         cout << "UnderFlow\nProgram Terminated\n";
         return;
@@ -45,7 +45,7 @@ template <class T> void QueueDemo<T>::deQueue() {
     count--;
 }
 
-template <class T> T QueueDemo<T>::peekFront() {
+template <class T> T Queue<T>::peekFront() {
     if (isEmpty()) {
         cout << "UnderFlow\nProgram Terminated\n";
         return 0;
@@ -53,7 +53,7 @@ template <class T> T QueueDemo<T>::peekFront() {
     return queue[front];
 }
 
-template <class T> T QueueDemo<T>::peekRear() {
+template <class T> T Queue<T>::peekRear() {
     if (isEmpty()) {
         cout << "UnderFlow\nProgram Terminated\n";
         return 0;
@@ -61,20 +61,20 @@ template <class T> T QueueDemo<T>::peekRear() {
     return queue[rear];
 }
 
-template <class T> int QueueDemo<T>::size() {
+template <class T> int Queue<T>::size() {
     return count;
 }
 
-template <class T> bool QueueDemo<T>::isEmpty() {
+template <class T> bool Queue<T>::isEmpty() {
     return (count == 0);
 }
 
-template <class T> bool QueueDemo<T>::isFull() {
+template <class T> bool Queue<T>::isFull() {
     return (rear == capacity - 1);
 }
 
 int main() {
-    QueueDemo<string> que(4);
+    Queue<string> que(4);
 
     que.enQueue("a");
     que.enQueue("b");
