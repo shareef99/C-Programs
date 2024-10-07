@@ -56,5 +56,30 @@
   "files.associations": {
     "*.ts": "typescript",
     "ostream": "cpp"
-  }
+  },
+  "cSpell.words": [
+    "saaa",
+    "saac",
+    "sabb",
+    "sabc",
+    "SACA",
+    "SACB",
+    "SACC",
+    "SBAA",
+    "sbab",
+    "SBBA",
+    "SBBB",
+    "SBBC",
+    "SBCA",
+    "SBCB",
+    "SBCC",
+    "scaa",
+    "SCAC",
+    "SCBA",
+    "SCBB",
+    "scbc",
+    "SCCA",
+    "SCCB",
+    "SCCC"
+  ]
 }
