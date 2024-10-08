@@ -55,7 +55,8 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "*.ts": "typescript",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "iostream": "cpp"
   },
   "cSpell.words": [
     "saaa",
